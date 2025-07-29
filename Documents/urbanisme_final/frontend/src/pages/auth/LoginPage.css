@@ -1,0 +1,194 @@
+/* Fond avec dégradé */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f7f4f4;
+  padding: 20px;
+}
+
+/* Carte blanche avec ombre et coins arrondis */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Icône en haut */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #256c49, #164b4d);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.shield-icon {
+  color: white !important;
+  font-size: 32px !important;
+}
+
+.login-title {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  margin-bottom: 4px !important;
+  color: #1e1e1e !important;
+}
+
+/* Sous-titre */
+.login-subtitle {
+  font-size: 14px !important;
+  color: #666 !important;
+  margin-bottom: 32px !important;
+}
+
+/* Groupe de formulaire */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Libellé de champ */
+.input-label {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  margin-bottom: 8px !important;
+  display: block !important;
+  color: #333 !important;
+}
+
+/* Champs d'entrée */
+.email-input .MuiOutlinedInput-root,
+.password-input .MuiOutlinedInput-root {
+  background-color: #f7f7f7;
+  border-radius: 12px;
+}
+
+.email-input .MuiOutlinedInput-notchedOutline,
+.password-input .MuiOutlinedInput-notchedOutline {
+  border-color: #e0e0e0 !important;
+}
+
+.email-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
+.password-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #bdbdbd !important;
+}
+
+.email-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+.password-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #9e9e9e !important;
+  border-width: 1px !important;
+}
+
+/* Padding dans les champs */
+.email-input .MuiOutlinedInput-input,
+.password-input .MuiOutlinedInput-input {
+  padding: 14px;
+  font-size: 14px;
+}
+
+/* Icône œil pour le mot de passe */
+.password-toggle {
+  color: #9e9e9e !important;
+  padding: 8px !important;
+}
+
+.password-toggle:hover {
+  color: #757575 !important;
+  background-color: transparent !important;
+}
+
+/* Ligne d'options */
+.options-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Checkbox et texte */
+.remember-me {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #444;
+}
+
+.remember-checkbox {
+  padding: 0 !important;
+  margin-right: 6px !important;
+}
+
+/* Lien Mot de passe oublié */
+.forgot-password {
+  text-transform: none !important;
+  color: #555 !important;
+  font-size: 14px !important;
+  padding: 0 !important;
+  min-width: auto !important;
+}
+
+.forgot-password:hover {
+  text-decoration: underline !important;
+  background-color: transparent !important;
+}
+
+/* Ligne séparatrice */
+.divider {
+  height: 1px;
+  background-color: #eee;
+  margin: 20px 0;
+}
+
+/* Bouton de connexion */
+.login-button {
+  background: linear-gradient(to right, #256c49, #164b4d) !important;
+  color: white !important;
+  padding: 14px !important;
+  font-weight: 600 !important;
+  margin-bottom: 16px !important;
+  border-radius: 8px !important;
+  text-transform: none !important;
+  font-size: 16px !important;
+}
+
+.login-button:hover {
+  background: linear-gradient(to right, #164b4d, #256c49) !important;
+}
+
+/* Créer un compte */
+.create-account {
+  text-transform: none !important;
+  color: #444 !important;
+  font-size: 14px !important;
+  padding: 0 !important;
+  min-width: auto !important;
+}
+
+.create-account:hover {
+  text-decoration: underline !important;
+  background-color: transparent !important;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 30px 20px;
+  }
+  
+  .options-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+

@@ -1,0 +1,167 @@
+/* Container principal */
+.register-container {
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* Carte du formulaire */
+.register-paper {
+  max-width: 480px;
+  width: 100%;
+  padding: 32px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* En-tête du formulaire */
+.register-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.register-title {
+  font-weight: 700;
+  background: linear-gradient(135deg, #1d722e 0%, #1d5e2c 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+.register-subtitle {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Rangées de champs (deux champs côte à côte) */
+.register-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* Chaque champ dans une rangée prend une largeur égale */
+.register-row > .register-field {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* Champs de formulaire */
+.register-field .MuiOutlinedInput-root {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.register-field .MuiOutlinedInput-root:hover {
+  box-shadow: 0 4px 12px rgba(31, 134, 76, 0.15);
+}
+
+.register-field .MuiOutlinedInput-root.Mui-focused {
+  box-shadow: 0 4px 12px rgba(162, 180, 166, 0.25);
+}
+
+/* Icônes */
+.register-icon {
+  color: #545459;
+}
+
+/* Bouton de soumission */
+.register-submit-btn {
+  height: 56px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: none;
+  background: linear-gradient(135deg, #13523d 0%, #2b8665 100%);
+  box-shadow: 0 8px 24px rgba(102, 234, 133, 0.4);
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.register-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(12, 81, 58, 0.5);
+  background: linear-gradient(135deg, #13523d 0%, #1d6935 100%);
+}
+
+.register-submit-btn:active {
+  transform: translateY(0px);
+}
+
+/* Bouton de basculement */
+.register-switch-btn {
+  height: 48px;
+  border-radius: 8px;
+  text-transform: none;
+  font-weight: 500;
+  color: #165524;
+  transition: all 0.3s ease;
+}
+
+.register-switch-btn:hover {
+  background-color: rgba(102, 126, 234, 0.08);
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .register-container {
+    padding: 8px;
+  }
+
+  .register-paper {
+    padding: 24px;
+    margin: 8px;
+  }
+
+  /* En mode mobile, empile les champs verticalement */
+  .register-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .register-field {
+    margin-bottom: 24px;
+  }
+
+  .register-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Animation fade in */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Amélioration focus input */
+.register-field .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #358659;
+  border-width: 2px;
+}
+
+/* Style message erreur */
+.register-field .MuiFormHelperText-root.Mui-error {
+  color: #f44336;
+  font-weight: 500;
+}
+
+/* Label focus */
+.register-field .MuiInputLabel-root.Mui-focused {
+  color: #286647;
+  font-weight: 600;
+}
